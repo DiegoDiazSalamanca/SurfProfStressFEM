@@ -1,4 +1,4 @@
-% Clear previous vars, clear memory, etc
+% Clear previous vars, clear memory, and so
 clear; clc; close all
 
 % Read the .txt file with the filtered profile and import it

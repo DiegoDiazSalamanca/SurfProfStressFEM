@@ -1,4 +1,5 @@
-<<<<<<< HEAD
+% Para revisar!!!!
+
 %% Code to estimate main surface parameters and simulate roughness via FEM
 % This code allows the user to evaluate the main surface roughness profile
 % parameters from a known 2D surface profile (X and Y data points), i.e, Ra,
