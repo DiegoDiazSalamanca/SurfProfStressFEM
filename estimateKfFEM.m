@@ -22,6 +22,7 @@ function [ra, rq, rv, rp, ry, rz, ktFEM, kfFEM] = estimateKfFEM(roughnessX, roug
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%   Programmed by Diego Díaz-Salamanca    diazsdiego@uniovi.es   %%%%%
+%%%%%   Copyright (c) 2026                                           %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 if nargin < 7
     showplots = 0; % 0 means false (no plots) by default
