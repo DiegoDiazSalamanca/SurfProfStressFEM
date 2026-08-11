@@ -1,5 +1,8 @@
 function [ra, rq, rv, rp, ry, rz, ktFEM, kfFEM] = estimateKfFEM(roughnessX, roughnessY, young, poisson, sigmaU, pressure, showplots)
-%
+%-------------------------------------------------------------------------
+%                         estimateKfFEM function                                                    
+%-------------------------------------------------------------------------
+% FUNCTION DESCRIPTION:
 % This function calculates main surface profile parameters (Ra, Rq, Rv, Rp, Ry, Rz)
 % from 2D data points. It then estimates the notch radius using Quan et al.'s 
 % proposal (DOI: 10.1016/j.ijfatigue.2021.106440) and computes the stress 
@@ -20,17 +23,16 @@ function [ra, rq, rv, rp, ry, rz, ktFEM, kfFEM] = estimateKfFEM(roughnessX, roug
 %   ktFEM - Stress concentration factor estimated via FEM
 %   kfFEM - Fatigue limit corrector parameter
 %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%   Programmed by Diego Díaz-Salamanca    diazsdiego@uniovi.es   %%%%%
-%%%%%   Copyright (c) 2026                                           %%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%-------------------------------------------------------------------------
+% Copyright (c) 2026, Diego Díaz Salamanca                           
+% Contact: diazsdiego@uniovi.es                                      
+%-------------------------------------------------------------------------
+
 if nargin < 7
     showplots = 0; % 0 means false (no plots) by default
 end
 
-% ------------------------------------------------------------------------
-% 1. Preliminary surface profile preparation
-% ------------------------------------------------------------------------
+%% 1. Preliminary surface profile preparation
 % 1.1) Delete roughness profile tendency if exists
 newYPoints = detrend(roughnessY, 1, "omitnan");
 newYPoints = newYPoints.*1000; % Convert the roughness from mm to microns
@@ -47,9 +49,8 @@ if showplots
     xlabel('Length [mm]'); ylabel('Depth [\mum]');
 end
 
-% ------------------------------------------------------------------------
-% 2. Computation of the main surface profile parameters
-% ------------------------------------------------------------------------
+
+%% 2. Computation of the main surface profile parameters
 % 2.1) Ra
 ra = mean(abs(newYPoints(:)), 'omitnan');
 
@@ -84,9 +85,7 @@ rsm = mean(sm)*1000;
 % 2.8) Rmr
 rmr = (sum(newYPoints>0)/length(newXPoints));
 
-% ------------------------------------------------------------------------
-% 3. Computation of the notch radius according to Quan et al.'s proposal
-% ------------------------------------------------------------------------
+%% 3. Computation of the notch radius according to Quan et al.'s proposal
 h = rv;
 l = rsm*(1 - rmr);
 if h>l/2
@@ -95,9 +94,7 @@ else
     rho = (h/2) + ((l^2)/(8*h));
 end
 
-% ------------------------------------------------------------------------
-% 4. Preparation of the signal for FEM analysis
-% ------------------------------------------------------------------------
+%% 4. Preparation of the signal for FEM analysis
 % 4.1) Generation of the 2D contour for the FEM analysis
 newYPoints = newYPoints./1000; % The countour should be in mm!
 y0 = min(newYPoints(1), newYPoints(end)) - 0.1;
@@ -133,9 +130,7 @@ if showplots
     pdegplot(gm, "EdgeLabels", "on");
 end
 
-% ------------------------------------------------------------------------
-% 5. Kt estimation by means of the finite element method
-% ------------------------------------------------------------------------
+%% 5. Kt estimation by means of the finite element method
 % 5.1) FEM model creation
 model = femodel("AnalysisType", "structuralStatic", "Geometry", gm);
 model.PlanarType = "planeStrain";
@@ -180,9 +175,7 @@ if showplots
     plot(mesh.Nodes(1, nodeIdMax), mesh.Nodes(2, nodeIdMax), "or", "MarkerFaceColor", "g", "MarkerSize", 8);
 end
 
-% ------------------------------------------------------------------------
-% 6. Kf parameter estimation 
-% ------------------------------------------------------------------------
+%% 6. Kf parameter estimation 
 % 6.1) Material parameters
 gamma = 0.025*(2070/sigmaU).^(1.8);
 q = 1/(1+gamma/(rho/1000));
