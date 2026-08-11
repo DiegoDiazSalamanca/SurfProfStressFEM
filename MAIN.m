@@ -3,7 +3,7 @@ clear; clc; close all
 
 % Read the .txt file with the filtered profile and import it
 [filename, pathname] = uigetfile({'*.txt';'*.csv';'*.slx';'*.xslx'}, 'File Selector');
-roughnessProfile = rmmissing(importRoughnessProfile(strcat(pathname, filename))); % See additional files
+roughnessProfile = rmmissing(importRoughnessProfile(strcat(pathname, filename))); % See additional files!
 roughnessX = roughnessProfile.X;
 roughnessY = roughnessProfile.Y;
 
