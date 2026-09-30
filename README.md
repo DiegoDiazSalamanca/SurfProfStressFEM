@@ -8,7 +8,7 @@ The theoretical stress concentration factor, $K_\mathrm{t}$, is defined as the r
 </p>
 
 $$
-K_\mathrm{t} = \frac{\sigma_{max}}{\sigma_{nom}},
+K_\mathrm{t} = \frac{\sigma_{\text{max}}}{\sigma_{\text{nom}}},
 $$
 
 <p align="justify">
