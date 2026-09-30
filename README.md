@@ -62,7 +62,7 @@ The reader should note that all model parameters, material characteristics, and 
 
 ## Example of Application
 <p align="justify">
-To facilitate the application of this code, a practical example using the provided MATLAB functions is presented below (see also <code>MAIN.m</code>). For users interested in testing the algorithm, several real surface roughness profiles measured during our recent research are available in the repository (see the **EXAMPLES** folder).
+To facilitate the application of this code, a practical example using the provided MATLAB functions is presented below (see also <code>MAIN.m</code>). For users interested in testing the algorithm, several real surface roughness profiles measured during our recent research are available in the repository (see the <folder>EXAMPLES</folder> folder).
 </p>
 
 ```matlab
@@ -94,7 +94,7 @@ To run this code successfully, you will need the following software and toolboxe
 
 <ul>
   <li><b>MATLAB</b> (Tested on R2023b and newer versions).</li>
-  <li><b>Partial Differential Equation Toolbox</b> <i>(Note: keep this only if your code relies on MATLAB's built-in PDE solvers)</i>.</li>
+  <li><b>Partial Differential Equation Toolbox</b>.</li>
   <li><b>Statistics and Machine Learning Toolbox</b> (required for standard data cleaning functions like <code>rmmissing</code>).</li>
 </ul>
 
