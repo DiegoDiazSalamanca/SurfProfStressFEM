@@ -62,7 +62,7 @@ The reader should note that all model parameters, material characteristics, and 
 
 ## Example of Application
 <p align="justify">
-To facilitate the application of this code, a practical example using the provided MATLAB functions is presented below (see also <code>MAIN.m</code>). For users interested in testing the algorithm, several real surface roughness profiles measured during our recent research are available in the repository (see the <folder>EXAMPLES</folder> folder).
+To facilitate the application of this code, a practical example using the provided MATLAB functions is presented below (see also <code>MAIN.m</code>). For users interested in testing the algorithm, several real surface roughness profiles measured during our recent research are available in the repository (see the <code>EXAMPLES</code> folder).
 </p>
 
 ```matlab
@@ -79,7 +79,7 @@ roughnessY = roughnessProfile.Y;
 [ra, rq, rv, rp, ry, rz, ktFEM, kfFEM] = estimateKfFEM(roughnessX, roughnessY, 206000, 0.296, 1097, -200, 1);
 ```
 
-Figure 3 show the result of applying the “*S3_005.txt*” roughness profile found in the (see <folder>EXAMPLES</folder>) folder.
+Figure 3 show the result of applying the “*S3_005.txt*” roughness profile found in the (see <code>EXAMPLES</code>) folder.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/55e5ab27-991a-48c6-9409-09874d9a902f" width="50%" alt="Model Discretization">
