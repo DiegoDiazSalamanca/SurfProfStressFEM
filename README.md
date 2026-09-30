@@ -1,4 +1,5 @@
 ## Introduction to SurfProfStressFEM
+![MATLAB](https://img.shields.io/badge/MATLAB-R2021a+-blue)
 <p align="justify">
 SurfProfStressFEM is a MATLAB-based code designed to compute the elastic stress concentration factor ($K_\mathrm{t}$) and the fatigue notch factor ($K_\mathrm{f}$) directly from surface roughness profiles. As an alternative to traditional commercial Finite Element Method (FEM) software, this tool takes advantage of MATLAB packages to solve the finite element problem.
 </p>
@@ -36,7 +37,7 @@ It should be noted that, although several formulations have been historically pr
 </p>
 
 <p align="justify">
-As a key feature of this model, rather than relying on traditional graphical procedures to compute the equivalent $\rho$ necessary for deriving the fatigue notch factor ($K_\mathrm{f}$), this code implements the arc-chord length formulation presented in [4]. It is worth noting that, as reported in the original study, this methodology generally yields larger notch radius values than conventional graphical techniques. However, because graphical approaches tend to characterize the notch geometry at an excessively localized scale, the arc-chord formulation provides a macro-scale representation that is far more consistent with the physical phenomena underlying notch effect correction factors. For illustrative purposes, Figure 1 presents the two possible formulations implemented as a function of the notch depth.
+As an alternative, rather than relying on traditional graphical procedures to compute the equivalent $\rho$ necessary for deriving the fatigue notch factor ($K_\mathrm{f}$), this code implements the arc-chord length formulation presented in [4] to estimate the $\rho$ in combination with a FEM to estimate the $K_\text{t}$  It is worth noting that, as reported in the original study, this methodology generally yields larger notch radius values than conventional graphical techniques. However, because graphical approaches tend to characterize the notch geometry at an excessively localized scale, the arc-chord formulation provides a macro-scale representation that is far more consistent with the physical phenomena underlying notch effect correction factors. For illustrative purposes, Figure 1 presents the two possible formulations implemented as a function of the notch depth.
 </p>
 
 <p align="center">
