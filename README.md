@@ -94,7 +94,7 @@ If you use this code or the provided data in your research of for industrial pur
 **Plain Text:**
 
 * Díaz-Salamanca, Diego. (2026). *Surface Profile Elastic Stress Estimation code via Finite Element Method (SurfProfStressFEM)* (Version 1.0) [Software]. GitHub. https://github.com/DiegoDiazSalamanca/SurfProfStressFEM
-* Díaz-Salamanca et al. (2026). *Influence of Machining-Induced Surface Integrity on High-Cycle Fatigue Behavior: Application to 42CrMo4+QT Steel*. Engineering Failure Analysis, XX(XX). doi: [AQUÍ_TU_DOI]
+* Díaz-Salamanca et al. (2026). *Influence of Machining-Induced Surface Integrity on High-Cycle Fatigue Behavior: Application to 42CrMo4+QT Steel*. Engineering Failure Analysis, XX(XX). doi: XXX
 </p>
 
 **BibTeX:**
