@@ -24,7 +24,7 @@ function [ra, rq, rv, rp, ry, rz, ktFEM, kfFEM] = estimateKfFEM(roughnessX, roug
 %   kfFEM - Fatigue limit corrector parameter
 %
 %-------------------------------------------------------------------------
-% Copyright (c) 2026, Diego Díaz Salamanca                           
+% Copyright (c) 2026, Diego Díaz-Salamanca                           
 % Contact: diazsdiego@uniovi.es                                      
 %-------------------------------------------------------------------------
 
