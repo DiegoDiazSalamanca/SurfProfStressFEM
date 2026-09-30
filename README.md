@@ -1,6 +1,6 @@
 ## Introduction to SurfProfStressFEM
 <p align="justify">
-SurfProfStressFEM is a MATLAB-based code designed to compute the elastic stress concentration factor ($K_\mathrm{t}$) and the fatigue notch factor ($K_\mathrm{f}$) directly from surface roughness profiles. As an alternative to traditional commercial Finite Element Method (FEM) software, this tool leverages advanced MATLAB packages to solve the underlying finite element problem natively.
+SurfProfStressFEM is a MATLAB-based code designed to compute the elastic stress concentration factor ($K_\mathrm{t}$) and the fatigue notch factor ($K_\mathrm{f}$) directly from surface roughness profiles. As an alternative to traditional commercial Finite Element Method (FEM) software, this tool leverages advanced MATLAB packages to solve the underlying finite element problem.
 </p>
 
 <p align="justify">
@@ -20,7 +20,7 @@ K_\mathrm{f} = 1 + \left(\frac{1}{1 + \frac{\gamma}{\rho}}\right)(K_\mathrm{t} -
 $$
 
 <p align="justify">
-where $\gamma$ is a material-dependent parameter defined by Dowling as a function of the ultimate tensile strength $\sigma_\mathrm{u}$, $\rho$ is the effective notch radius, and $K_\mathrm{t}$ is the elastic stress concentration factor.
+where $\gamma$ is a material-dependent parameter defined by Dowling [1] as a function of the ultimate tensile strength $\sigma_\mathrm{u}$, $\rho$ is the effective notch radius, and $K_\mathrm{t}$ is the elastic stress concentration factor.
 </p>
 
 <p align="justify">
@@ -32,11 +32,11 @@ $$
 $$
 
 <p align="justify">
-It should be noted that, although several formulations have been historically proposed to estimate the stress concentration factor ($K_\mathrm{t}$) from surface profiles (e.g., Neuber [1] and Arola-Ramulu [2]), these methods rely on analytical expressions that typically combine standard surface roughness parameters (such as $R_\mathrm{a}$ or $R_\mathrm{z}$) with the effective notch radius, $\rho$. The latter is commonly evaluated from each measured roughness profile using graphical procedures.
+It should be noted that, although several formulations have been historically proposed to estimate the stress concentration factor ($K_\mathrm{t}$) from surface profiles (e.g., Neuber [2] and Arola-Ramulu [3]), these methods rely on analytical expressions that typically combine standard surface roughness parameters (such as $R_\mathrm{a}$ or $R_\mathrm{z}$) with the effective notch radius, $\rho$. The latter is commonly evaluated from each measured roughness profile using graphical procedures.
 </p>
 
 <p align="justify">
-As a key feature of this model, rather than relying on traditional graphical procedures to compute the equivalent $\rho$ necessary for deriving the fatigue notch factor ($K_\mathrm{f}$), this code implements the arc-chord length formulation presented in [3]. It is worth noting that, as reported in the original study, this methodology generally yields larger notch radius values than conventional graphical techniques. However, because graphical approaches tend to characterize the notch geometry at an excessively localized scale, the arc-chord formulation provides a macro-scale representation that is far more consistent with the physical phenomena underlying notch effect correction factors. For illustrative purposes, Figure 1 presents the two possible formulations implemented as a function of the notch depth.
+As a key feature of this model, rather than relying on traditional graphical procedures to compute the equivalent $\rho$ necessary for deriving the fatigue notch factor ($K_\mathrm{f}$), this code implements the arc-chord length formulation presented in [4]. It is worth noting that, as reported in the original study, this methodology generally yields larger notch radius values than conventional graphical techniques. However, because graphical approaches tend to characterize the notch geometry at an excessively localized scale, the arc-chord formulation provides a macro-scale representation that is far more consistent with the physical phenomena underlying notch effect correction factors. For illustrative purposes, Figure 1 presents the two possible formulations implemented as a function of the notch depth.
 </p>
 
 <p align="center">
@@ -89,7 +89,7 @@ Figure 3 show the result of applying the “*S3_005.txt*” roughness profile fo
 
 ## Citation
 <p align="justify">
-If you use this code or the provided data in your research of for inducstrial purposes, please cite both the software and the original research paper as follows:
+If you use this code or the provided data in your research of for industrial purposes, please cite both the software and the original research paper as follows:
 
 **Plain Text:**
 
@@ -121,10 +121,11 @@ If you use this code or the provided data in your research of for inducstrial pu
 ```
 
 ## References
+**[1]** N. Dowling (1999). *Mechanical behavior of materials: engineering methods for deformation, fracture, and fatigue*, Prentice Hall.
 
 **[1]** H. Neuber (1937). Kerbspannungslehre: Grundlagen für genaue Festigkeitsberechnung mit Berücksichtigung12
 von Konstruktionsform und Werkstoff, Springer-Verlag, Berlin.
 
 **[2]** D. Arola, C. Williams (2002). *Estimating the fatigue stress concentration factor of machined surfaces*, International Journal of fatigue, 24(9), 923–930.
 
-**[3]** F. Quan, Z. Chen, H. Ye, C. Cui, Y. Cui (2021). *Study of the effect of surface roughness on fatigue strength of gh4169 based on indirect evaluation of the notch root radius*, International Journal of Fatigue, 223, 106440
+**[3]** F. Quan, Z. Chen, H. Ye, C. Cui, Y. Cui (2021). *Study of the effect of surface roughness on fatigue strength of gh4169 based on indirect evaluation of the notch root radius*, International Journal of Fatigue, 223, 106440.
