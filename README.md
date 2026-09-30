@@ -62,7 +62,7 @@ The reader should note that all model parameters, material characteristics, and 
 
 ## Example of Application
 <p align="justify">
-To facilitate the application of this code, a practical example using the provided MATLAB functions is presented below (see also <code>MAIN.m</code>). For users interested in testing the algorithm, several real surface roughness profiles measured during our recent research are available in the repository (see the <code>EXAMPLES</code> folder).
+To facilitate the application of this code, a practical example using the provided MATLAB functions is presented below (see also <code>MAIN.m</code>). For users interested in testing the algorithm, several real surface roughness profiles measured during our recent research are available in the repository (see the **EXAMPLES** folder).
 </p>
 
 ```matlab
@@ -87,10 +87,28 @@ Figure 3 show the result of applying the “*S3_005.txt*” roughness profile fo
   <em><b>Figure 3:</b> Finite element model of one profile.</em>
 </p>
 
+## Prerequisites
+<p align="justify">
+To run this code successfully, you will need the following software and toolboxes installed:
+</p>
+
+<ul>
+  <li><b>MATLAB</b> (Tested on R2023b and newer versions).</li>
+  <li><b>Partial Differential Equation Toolbox</b> <i>(Note: keep this only if your code relies on MATLAB's built-in PDE solvers)</i>.</li>
+  <li><b>Statistics and Machine Learning Toolbox</b> (required for standard data cleaning functions like <code>rmmissing</code>).</li>
+</ul>
+
+## License
+<p align="justify">
+This project is licensed under the <b>MIT License</b>. You are free to use, modify, and distribute this software for both academic and commercial purposes, provided that you include the original copyright notice and properly cite the original authors (see the <a href="#citation">Citation</a> section below).
+</p>
+<p align="justify">
+For more details, please refer to the <code>LICENSE</code> file included in this repository.
+</p>
 
 ## Citation
 <p align="justify">
-If you use this code or the provided data in your research of for industrial purposes, please, cite both the software and the original research paper as follows:
+If you use this code or the provided data in your research or for industrial purposes, please, cite both the software and the original research paper as follows:
 
 **Plain Text:**
 
@@ -124,9 +142,9 @@ If you use this code or the provided data in your research of for industrial pur
 ## References
 **[1]** N. Dowling (1999). *Mechanical behavior of materials: engineering methods for deformation, fracture, and fatigue*, Prentice Hall.
 
-**[1]** H. Neuber (1937). Kerbspannungslehre: Grundlagen für genaue Festigkeitsberechnung mit Berücksichtigung12
+**[2]** H. Neuber (1937). Kerbspannungslehre: Grundlagen für genaue Festigkeitsberechnung mit Berücksichtigung12
 von Konstruktionsform und Werkstoff, Springer-Verlag, Berlin.
 
-**[2]** D. Arola, C. Williams (2002). *Estimating the fatigue stress concentration factor of machined surfaces*, International Journal of fatigue, 24(9), 923–930.
+**[3]** D. Arola, C. Williams (2002). *Estimating the fatigue stress concentration factor of machined surfaces*, International Journal of fatigue, 24(9), 923–930.
 
-**[3]** F. Quan, Z. Chen, H. Ye, C. Cui, Y. Cui (2021). *Study of the effect of surface roughness on fatigue strength of gh4169 based on indirect evaluation of the notch root radius*, International Journal of Fatigue, 223, 106440.
+**[4]** F. Quan, Z. Chen, H. Ye, C. Cui, Y. Cui (2021). *Study of the effect of surface roughness on fatigue strength of gh4169 based on indirect evaluation of the notch root radius*, International Journal of Fatigue, 223, 106440.
