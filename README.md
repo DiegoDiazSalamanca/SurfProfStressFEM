@@ -1,10 +1,10 @@
 ## Introduction to SurfProfStressFEM
 <p align="justify">
-SurfProfStressFEM is a MATLAB-based code designed to compute the elastic stress concentration factor ($K_\mathrm{t}$) and the fatigue notch factor ($K_\mathrm{f}$) directly from surface roughness profiles. As an alternative to traditional commercial Finite Element Method (FEM) software, this tool leverages advanced MATLAB packages to solve the underlying finite element problem.
+SurfProfStressFEM is a MATLAB-based code designed to compute the elastic stress concentration factor ($K_\mathrm{t}$) and the fatigue notch factor ($K_\mathrm{f}$) directly from surface roughness profiles. As an alternative to traditional commercial Finite Element Method (FEM) software, this tool takes advantage of MATLAB packages to solve the finite element problem.
 </p>
 
 <p align="justify">
-The theoretical stress concentration factor, $K_\mathrm{t}$, is defined as the ratio of the maximum stress to the nominal stress:
+The theoretical stress concentration factor ($K_\mathrm{t}$) is defined as the ratio of the maximum stress to the nominal stress:
 </p>
 
 $$
@@ -20,7 +20,7 @@ K_\mathrm{f} = 1 + \left(\frac{1}{1 + \frac{\gamma}{\rho}}\right)(K_\mathrm{t} -
 $$
 
 <p align="justify">
-where $\gamma$ is a material-dependent parameter defined by Dowling [1] as a function of the ultimate tensile strength $\sigma_\mathrm{u}$, $\rho$ is the effective notch radius, and $K_\mathrm{t}$ is the elastic stress concentration factor.
+where $\gamma$ is a material-dependent parameter defined by Dowling [1] as a function of the ultimate tensile strength $\sigma_\mathrm{u}$, $\rho$ is the effective notch radius, and $K_\mathrm{t}$ is the aforementioned elastic stress concentration factor.
 </p>
 
 <p align="justify">
@@ -46,7 +46,7 @@ As a key feature of this model, rather than relying on traditional graphical pro
 </p>
 
 <p align="justify">
-Regarding the model and its boundary conditions, the numerical framework implemented herein relies on a two-dimensional linear elastic model under plane strain conditions, utilizing standard material properties for steel ($E = 206,000$ MPa and $\nu = 0.296$). As depicted in Figure 2, the model geometry features an unstructured two-dimensional triangular mesh with quadratic elements. To ensure mesh convergence, the boundary discretization along the roughness profile was defined with a target edge length of $0.00025$ mm. Regarding the boundary conditions, the left vertical edge was fully constrained, while a remote tensile pressure was applied within the elastic regime ($200$ MPa) at the opposite edge along the longitudinal direction of the sample.
+Regarding the model and its boundary conditions, the numerical framework implemented herein relies on a two-dimensional linear elastic model under plane strain conditions, utilizing standard material properties for steel ($E = 206,000$ MPa and $\nu = 0.296$). As depicted in Figure 2, the model geometry features an unstructured two-dimensional triangular mesh with quadratic elements. To ensure mesh convergence, the boundary discretization along the roughness profile was defined with a target edge length of $0.00025$ mm. Regarding the boundary conditions, the left vertical edge was fully constrained, while a remote tensile constant pressure was applied ($200$ MPa) at the opposite edge along the longitudinal direction of the sample.
 </p>
 
 <p align="center">
@@ -61,7 +61,7 @@ The reader should note that all model parameters, material characteristics, and 
 
 ## Example of Application
 <p align="justify">
-To facilitate the application of this code, a practical example using the provided MATLAB functions is presented below (see <code>MAIN.m</code>). For users interested in testing the algorithm, several real surface roughness profiles measured during our recent research are available in the repository (see the <code>EXAMPLES</code> folder).
+To facilitate the application of this code, a practical example using the provided MATLAB functions is presented below (see also <code>MAIN.m</code>). For users interested in testing the algorithm, several real surface roughness profiles measured during our recent research are available in the repository (see the <code>EXAMPLES</code> folder).
 </p>
 
 ```matlab
@@ -89,7 +89,7 @@ Figure 3 show the result of applying the “*S3_005.txt*” roughness profile fo
 
 ## Citation
 <p align="justify">
-If you use this code or the provided data in your research of for industrial purposes, please cite both the software and the original research paper as follows:
+If you use this code or the provided data in your research of for industrial purposes, please, cite both the software and the original research paper as follows:
 
 **Plain Text:**
 
