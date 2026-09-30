@@ -15,7 +15,7 @@ function profileData = importRoughnessProfile(filename, dataLines)
 %   profileData - profile data in a tabular format
 %
 %-------------------------------------------------------------------------
-% Copyright (c) 2026, Diego Díaz Salamanca                           
+% Copyright (c) 2026, Diego Díaz-Salamanca                           
 % Contact: diazsdiego@uniovi.es                                      
 %-------------------------------------------------------------------------
 
