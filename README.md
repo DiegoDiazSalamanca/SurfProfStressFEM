@@ -8,7 +8,7 @@ The theoretical stress concentration factor, $K_\mathrm{t}$, is defined as the r
 </p>
 
 $$
-K_\mathrm{t} = \frac{\sigma_{max}}{\sigma_{nom}}
+K_\mathrm{t} = \frac{\sigma_{max}}{\sigma_{nom}},
 $$
 
 <p align="justify">
@@ -16,7 +16,7 @@ while the effective fatigue stress concentration factor ($K_\mathrm{f}$) is defi
 </p>
 
 $$
-K_\mathrm{f} = 1 + \left(\frac{1}{1 + \frac{\gamma}{\rho}}\right)(K_\mathrm{t} - 1)
+K_\mathrm{f} = 1 + \left(\frac{1}{1 + \frac{\gamma}{\rho}}\right)(K_\mathrm{t} - 1),
 $$
 
 <p align="justify">
@@ -28,7 +28,7 @@ For 42CrMo4 steel, the parameter $\gamma$ can be expressed as follows (note that
 </p>
 
 $$
-\gamma = 0.025 \left(\frac{2070~\mathrm{MPa}}{\sigma_\mathrm{u}}\right)^{1.8}
+\gamma = 0.025 \left(\frac{2070~\mathrm{MPa}}{\sigma_\mathrm{u}}\right)^{1.8}.
 $$
 
 <p align="justify">
