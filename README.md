@@ -93,9 +93,9 @@ To run this code successfully, you will need the following software and toolboxe
 </p>
 
 <ul>
-  <li><b>MATLAB</b> (Tested on R2023b and newer versions).</li>
+  <li><b>MATLAB</b> (Tested on R2023b).</li>
   <li><b>Partial Differential Equation Toolbox</b>.</li>
-  <li><b>Statistics and Machine Learning Toolbox</b> (required for standard data cleaning functions like <code>rmmissing</code>).</li>
+  <li><b>Statistics and Machine Learning Toolbox</b>.</li>
 </ul>
 
 ## License
