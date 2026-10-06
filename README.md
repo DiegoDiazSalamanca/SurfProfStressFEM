@@ -66,16 +66,16 @@ To facilitate the application of this code, a practical example using the provid
 </p>
 
 ```matlab
-% Clear previous vars, clear memory, and so on
+% clear previous vars, clear memory, and so on
 clear; clc; close all
 
-% Read the .txt file with the filtered profile and import it
+% read the .txt file with the filtered profile and import it
 [filename, pathname] = uigetfile({'*.txt';'*.csv';'*.slx';'*.xslx'}, 'File Selector');
 roughnessProfile = rmmissing(importRoughnessProfile(strcat(pathname, filename))); % See EXAMPLES folder!
 roughnessX = roughnessProfile.X;
 roughnessY = roughnessProfile.Y;
 
-% Estimate the profile parameters
+% estimate the profile parameters
 [ra, rq, rv, rp, ry, rz, ktFEM, kfFEM] = estimateKfFEM(roughnessX, roughnessY, 206000, 0.296, 1097, -200, 1);
 ```
 
