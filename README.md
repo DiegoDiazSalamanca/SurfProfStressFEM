@@ -140,11 +140,10 @@ If you use this code or the provided data in your research or for industrial pur
 ```
 
 ## References
-**[1]** N. Dowling (1999). *Mechanical behavior of materials: engineering methods for deformation, fracture, and fatigue*, Prentice Hall.
+**[1]** Dowling Norman, E. (1999). Mechanical behavior of materials: engineering methods for deformation fracture and fatigue.
 
-**[2]** H. Neuber (1937). Kerbspannungslehre: Grundlagen für genaue Festigkeitsberechnung mit Berücksichtigung12
-von Konstruktionsform und Werkstoff, Springer-Verlag, Berlin.
+**[3]** Neuber, H. (2013). Kerbspannungslehre: Grundlagen für genaue Festigkeitsberechnung mit Berücksichtigung von Konstruktionsform und Werkstoff. Springer-Verlag.
 
-**[3]** D. Arola, C. Williams (2002). *Estimating the fatigue stress concentration factor of machined surfaces*, International Journal of fatigue, 24(9), 923–930.
+**[3]** Arola, D., & Williams, C. L. (2002). Estimating the fatigue stress concentration factor of machined surfaces. International Journal of fatigue, 24(9), 923-930.
 
-**[4]** F. Quan, Z. Chen, H. Ye, C. Cui, Y. Cui (2021). *Study of the effect of surface roughness on fatigue strength of gh4169 based on indirect evaluation of the notch root radius*, International Journal of Fatigue, 223, 106440.
+**[4]** Quan, F., Chen, Z., Ye, H., Cui, C., & Cui, Y. (2021). Study of the effect of surface roughness on fatigue strength of GH4169 based on indirect evaluation of the notch root radius. international Journal of Fatigue, 152, 106440.
