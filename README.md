@@ -1,7 +1,7 @@
 ## Introduction to SurfProfStressFEM ![MATLAB](https://img.shields.io/badge/MATLAB-R2023b+-blue)
 
 <p align="justify">
-SurfProfStressFEM is a MATLAB-based code designed to compute the elastic stress concentration factor ($K_\mathrm{t}$) and the fatigue notch factor ($K_\mathrm{f}$) directly from surface roughness profiles. As an alternative to traditional commercial Finite Element Method (FEM) software, this tool takes advantage of MATLAB packages to solve the finite element problem.
+SurfProfStressFEM is a MATLAB-based code designed to compute the elastic stress concentration factor ($K_\mathrm{t}$) and the fatigue notch factor ($K_\mathrm{f}$) directly from surface roughness profiles. As an alternative to the use of traditional commercial finite element (FE) software, this tool takes advantage of MATLAB packages to solve the finite element problem.
 </p>
 
 <p align="justify">
