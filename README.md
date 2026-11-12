@@ -131,10 +131,12 @@ If you use this code or the provided data in your research or for industrial pur
   author       = {Díaz-Salamanca, D. and others},
   title        = {Influence of Machining-Induced Surface Integrity on High-Cycle Fatigue Behavior: Application to 42CrMo4+QT Steel},
   journal={Engineering Failure Analysis},
-  volume={XX},
-  number={XX},
-  pages={XX--XX},
-  year={2026},
+  volume={200},
+  pages={111609},
+  year={2027},
+  issn = {1350-6307},
+  doi = {https://doi.org/10.1016/j.engfailanal.2026.111609},
+  url = {https://www.sciencedirect.com/science/article/pii/S1350630726010848},
   publisher={Elsevier}
 }
 ```
